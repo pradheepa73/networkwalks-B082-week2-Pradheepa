@@ -156,7 +156,8 @@ OVERALL ENGAGEMENT STATUS: ✅ 100% COMPLETE
 
 The full penetration testing report is available here:
 
-📄 [Penetration_Testing_Report_B082_Pradheepa.pdf](./W2-PM_FINAL_Report/Penetration_Testing_Report_B082_Pradheepa.pdf)
+📄 [Penetration_Testing_Report_B082_Pradheepa.pdf.pdf](https://github.com/user-attachments/files/31301220/Penetration_Testing_Report_B082_Pradheepa.pdf.pdf)
+
 
 ---
 
