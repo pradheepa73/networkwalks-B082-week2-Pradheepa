@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════════════
+                    ZENMAP SCAN OUTPUT (REDACTED)
+                    Date: 18 August 2026
+                    Author: PRADHEEPA.M
+═══════════════════════════════════════════════════════════════
+
+Target: [SUBNET REDACTED]
+Scan Type: Ping Scan
+
+COMMAND OUTPUT:
+─────────────────────────────────────────────────────────────────
+Starting Nmap 7.99 ( https://nmap.org ) at 2026-08-18 05:51 -0400
+
+Nmap scan report for [GATEWAY IP REDACTED]
+Host is up (0.00094s latency).
+MAC Address: [MAC REDACTED] (QEMU virtual NIC)
+
+Nmap scan report for [KALI VM IP REDACTED]
+Host is up.
+
+Nmap done: 256 IP addresses (2 hosts up) scanned in 3.06 seconds
+
+SUMMARY:
+─────────────────────────────────────────────────────────────────
+Total Live Hosts: 2
+
+HOSTS DISCOVERED:
+─────────────────────────────────────────────────────────────────
+1. Gateway/Router
+2. Kali Linux VM (Attacker Machine)
+
+MAC ADDRESSES:
+─────────────────────────────────────────────────────────────────
+1. [MAC REDACTED] (Gateway)
+2. [MAC REDACTED] (Kali Linux)
+
+TASK ANSWERS:
+─────────────────────────────────────────────────────────────────
+Task 4: How many hosts are live in your subnet?
+Answer: 2 hosts are live
+
+Task 5: What are the IP addresses of the live hosts?
+Answer: [IP REDACTED], [IP REDACTED]
+
+Task 6: What are the MAC addresses of the live hosts?
+Answer: [MAC REDACTED], [MAC REDACTED]
+
+Task 7: Display & save the output topology in PDF Format
+Answer: Saved as networkwalk.pdf
+
+═══════════════════════════════════════════════════════════════

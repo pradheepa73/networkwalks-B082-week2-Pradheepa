@@ -1,0 +1,118 @@
+═══════════════════════════════════════════════════════════════
+                    THEHARVESTER RECONNAISSANCE
+                    Target: networkwalks.com
+                    Date: 21 August 2026
+                    Author: PRADHEEPA.M
+═══════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────┐
+│ TASK 1: BAIDU SEARCH                                        │
+│ Command: theHarvester -d networkwalks.com -l 1000 -b baidu │
+└─────────────────────────────────────────────────────────────┘
+
+[*] Target: networkwalks.com
+[*] Searching Baidu.
+
+RESULTS:
+─────────────────────────────────────────────────────────────────
+[*] No IPs found.
+[*] No emails found.
+[*] No people found.
+[*] No hosts found.
+
+TOTAL FINDINGS: 0
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TASK 2: ALL SOURCES                                        │
+│ Command: theHarvester -d networkwalks.com -l 50 -b all    │
+└─────────────────────────────────────────────────────────────┘
+
+[*] Target: networkwalks.com
+[*] Searching multiple sources...
+
+RESULTS:
+─────────────────────────────────────────────────────────────────
+
+ASNs FOUND: 3
+─────────────────────────────────────────────────────────────────
+1. AS13335
+2. AS31898
+3. AS46606
+
+INTERESTING URLS: 2
+─────────────────────────────────────────────────────────────────
+1. http://networkwalks.com/
+2. https://networkwalks.com/
+
+IPS FOUND: 4
+─────────────────────────────────────────────────────────────────
+⚠️ IP addresses removed for security
+[REDACTED]
+[REDACTED]
+[REDACTED]
+[REDACTED]
+
+EMAILS FOUND: 1
+─────────────────────────────────────────────────────────────────
+1. info@networkwalks.com
+
+NO PEOPLE FOUND.
+NO LINKEDIN USERS FOUND.
+
+HOSTS/SUBDOMAINS FOUND: 31
+─────────────────────────────────────────────────────────────────
+1.  autodiscover.networkwalks.com
+2.  autodiscoverp.networkwalks.com
+3.  autodiscovers.networkwalks.com
+4.  cpanel.networkwalks.com
+5.  cpanelr.networkwalks.com
+6.  cpcalendars.networkwalks.com
+7.  cpcalendarsm.networkwalks.com
+8.  cpcalendarsr.networkwalks.com
+9.  cpcontacts.networkwalks.com
+10. cpcontactsk.networkwalks.com
+11. cpcontactss3.networkwalks.com
+12. ftp.networkwalks.com
+13. mail.networkwalks.com
+14. webdisk.networkwalks.com
+15. webmail.networkwalks.com
+16. networkwalks.com
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ SUMMARY TABLE                                              │
+└─────────────────────────────────────────────────────────────┘
+
+                    ┌──────────────┬───────────┐
+                    │ Category     │ Count     │
+                    ├──────────────┼───────────┤
+                    │ ASNs         │ 3         │
+                    │ IPs          │ 4         │
+                    │ Emails       │ 1         │
+                    │ Hosts/Subdomains│ 31     │
+                    │ People       │ 0         │
+                    └──────────────┴───────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ KEY OBSERVATIONS                                           │
+└─────────────────────────────────────────────────────────────┘
+
+1. Baidu source returned NO results
+2. Multi-source search found significant data
+3. 1 email address identified: info@networkwalks.com
+4. 31 subdomains/hosts discovered
+5. 3 ASNs identified
+6. cPanel and mail services detected
+
+┌─────────────────────────────────────────────────────────────┐
+│ ATTACKER PERSPECTIVE                                       │
+└─────────────────────────────────────────────────────────────┘
+
+1. Email info@networkwalks.com = potential phishing target
+2. 31 subdomains = expanded attack surface
+3. cPanel detected = potential control panel vulnerability
+4. Mail server identified = email attack vector
+5. ASNs reveal hosting infrastructure
+
+═══════════════════════════════════════════════════════════════

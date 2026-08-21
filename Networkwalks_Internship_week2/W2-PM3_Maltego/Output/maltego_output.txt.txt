@@ -1,0 +1,147 @@
+═══════════════════════════════════════════════════════════════
+                    MALTEGO RECONNAISSANCE
+                    Target: networkwalks.com
+                    Tool: Maltego Graph 4.12.1
+                    Date: 21 August 2026
+                    Author: PRADHEEPA.M
+═══════════════════════════════════════════════════════════════
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ SETUP & INSTALLATION                                       │
+└─────────────────────────────────────────────────────────────┘
+
+Tool Name          : Maltego Graph (Desktop)
+Version            : 4.12.1
+Platform           : Kali Linux
+License Status     : Active (until 31 Dec 2034)
+
+Installed Transforms:
+─────────────────────────────────────────────────────────────────
+1. Person of Interest (Maltego Technologies)
+2. Farsight DNSDB (Farsight Security, Inc.)
+3. Hunter (Maltego Technologies)
+
+Transforms Attempted but Require API Key:
+─────────────────────────────────────────────────────────────────
+1. HYAS - Insight (API key required)
+2. Dorking Transforms (API key required)
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ ENTITY CREATION                                            │
+└─────────────────────────────────────────────────────────────┘
+
+Entity Type        : Domain
+Entity Name        : networkwalks.com
+Workspace          : New Graph
+
+SCREENSHOT EVIDENCE:
+─────────────────────────────────────────────────────────────────
+1. Main workspace created
+2. Domain entity added
+3. Domain name changed to networkwalks.com
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TRANSFORMS RUN                                               │
+└─────────────────────────────────────────────────────────────┘
+
+TRANSFORM 1: [POI] Find Email Addresses [Hunter]
+─────────────────────────────────────────────────────────────────
+Status           : ✅ Completed Successfully
+Entity           : networkwalks.com
+Credits Consumed : 5
+Credits Remaining: 195
+Time Taken       : 5 seconds 962 ms
+
+RESULT:
+─────────────────────────────────────────────────────────────────
+- No email addresses found for networkwalks.com
+- Transform completed successfully
+- API connection working
+
+TRANSFORM 2: To DNS Names [DNSDB]
+─────────────────────────────────────────────────────────────────
+Status           : ⚠️ Requires API Key
+Entity           : networkwalks.com
+Source           : Farsight Security DNSDB
+
+RESULT:
+─────────────────────────────────────────────────────────────────
+- DNSDB API key required
+- Transform not completed
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TRANSFORM OUTPUT LOG                                        │
+└─────────────────────────────────────────────────────────────┘
+
+[8/21/26, 3:14 AM] INFO Running transform [POI] Find Email Addresses 
+[Hunter] on 1 entities (from entity "networkwalks.com")
+
+[8/21/26, 3:14 AM] INFO ---[ Unified Credits ]--- : You have consumed 
+5 credits. You have 195 credits remaining. New period starts after 
+September 1, 2026, 12:00:00 AM Z.
+
+[8/21/26, 3:14 AM] INFO Transform [POI] Find Email Addresses [Hunter] 
+completed in 5 s 962 ms (from entity "networkwalks.com")
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ FINDINGS SUMMARY                                           │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ Category              │ Finding                             │
+│───────────────────────│─────────────────────────────────────│
+│ Domain Added          │ networkwalks.com                    │
+│ Email Transforms Run  │ Hunter - Completed Successfully    │
+│ Email Found           │ None                                │
+│ DNS Transforms Run    │ DNSDB - API Key Required            │
+│ Credits Consumed      │ 5                                   │
+│ Credits Remaining     │ 195                                 │
+│ File Saved            │ maltego_networkwalks.mtz           │
+└─────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ KEY OBSERVATIONS                                           │
+└─────────────────────────────────────────────────────────────┘
+
+1. Hunter transform completed successfully
+2. No email addresses were discovered for networkwalks.com
+3. DNSDB transform requires API key
+4. Maltego graph file saved for future reference
+5. Credits available for future transforms (195 remaining)
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ ATTACKER PERSPECTIVE                                       │
+└─────────────────────────────────────────────────────────────┘
+
+1. No emails found = Good email security practices
+2. Reduced phishing attack surface
+3. Organization has minimal public email exposure
+4. Well-configured email security
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ FILE SAVED                                                 │
+└─────────────────────────────────────────────────────────────┘
+
+Filename          : maltego_networkwalks.mtz
+Location          : ~/Desktop/Networkwalks_Internship_Week2/
+                    W2-PM3_Maltego/Outputs/
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ CONCLUSION                                                 │
+└─────────────────────────────────────────────────────────────┘
+
+Maltego reconnaissance successfully completed.
+Hunter transform ran successfully and found no emails.
+DNSDB transforms require API key for full functionality.
+Evidence saved in screenshots and project file.
+
+═══════════════════════════════════════════════════════════════

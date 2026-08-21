@@ -1,0 +1,47 @@
+═══════════════════════════════════════════════════════════════════════════════════
+                    MATHEMATICS EBOOK FINDINGS
+                    Google Hacking Database (GHDB)
+                    Date: 17 August 2026
+                    Author: PRADHEEPA.M
+═══════════════════════════════════════════════════════════════════════════════════
+
+┌─────┬──────────────────────────────────────────┬──────────────────────────────────────────────┬──────────────────┐
+│ No. │ Link                                     │ Dork Used                                    │ Username/        │
+│     │                                          │                                              │ Password         │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 1   │ http://erewhon.superkuh.com/library/Math/│ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 2   │ http://punainternationalschool.com/      │ intitle:index.of "parent directory"          │ ---              │
+│     │ assets/upload/ck-images/                 │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 3   │ http://erewhon.superkuh.com/library/Math/│ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 4   │ https://wdcmta.littleclarion.com/        │ intitle:index.of "parent directory"          │ ---              │
+│     │ ELEMENTARY%20MANUAL/Materials/04%20      │ mathematics pdf                              │                  │
+│     │ Mathematics/1%20Mathematics%20-%20Math%20│                                              │                  │
+│     │ 1/1%20The%20Basic%20Operations/Equation%20│                                              │                  │
+│     │ Slips/                                   │                                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 5   │ https://ss.du.ac.in/pdf/                 │ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 6   │ https://ebook-mecca.com/ebooks/          │ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 7   │ https://csjmu.ac.in/wp-content/uploads/  │ intitle:index.of "parent directory"          │ ---              │
+│     │ pdf/                                     │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 8   │ https://root.cern.ch/download/           │ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 9   │ http://erewhon.superkuh.com/library/     │ intitle:index.of "parent directory"          │ ---              │
+│     │ Computing/                               │ mathematics pdf                              │                  │
+├─────┼──────────────────────────────────────────┼──────────────────────────────────────────────┼──────────────────┤
+│ 10  │ https://avalonlibrary.net/ebooks/        │ intitle:index.of "parent directory"          │ ---              │
+│     │                                          │ mathematics pdf                              │                  │
+└─────┴──────────────────────────────────────────┴──────────────────────────────────────────────┴──────────────────┘
+
+TOTAL EBOOKS FOUND: 10 ✅ COMPLETE!
+═══════════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,213 @@
+═══════════════════════════════════════════════════════════════
+                    KALI TOOLS RECONNAISSANCE
+                    Target: networkwalks.com
+                    Date: 21 August 2026
+                    Author: PRADHEEPA.M
+═══════════════════════════════════════════════════════════════
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 1: WHOIS                                              │
+│ Command: whois networkwalks.com                            │
+└─────────────────────────────────────────────────────────────┘
+
+Domain Name: NETWORKWALKS.COM
+Registry Domain ID: [REDACTED]
+Registrar: GoDaddy.com, LLC
+Registrar IANA ID: [REDACTED]
+Creation Date: [REDACTED]
+Registry Expiry Date: [REDACTED]
+Updated Date: [REDACTED]
+
+Name Servers:
+- [REDACTED].HOSTGATOR.COM
+- [REDACTED].HOSTGATOR.COM
+- [REDACTED].DOMAINCONTROL.COM
+- [REDACTED].DOMAINCONTROL.COM
+
+DNSSEC: unsigned
+
+Domain Status:
+- clientDeleteProhibited
+- clientRenewProhibited
+- clientTransferProhibited
+- clientUpdateProhibited
+
+Registrar Abuse Contact:
+- Email: [REDACTED]
+- Phone: [REDACTED]
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 2: WHATWEB                                            │
+│ Command: whatweb networkwalks.com                         │
+└─────────────────────────────────────────────────────────────┘
+
+Website: https://networkwalks.com
+Status: 200 OK
+
+TECHNOLOGY STACK:
+─────────────────────────────────────────────────────────────────
+Web Server         : Apache
+CMS                : WordPress
+WordPress Version  : 7.0.4
+Plugin             : WordPress Download Manager 3.3.58
+Framework          : Bootstrap
+JavaScript Library : jQuery 3.7.1
+Country            : United States
+Email              : [REDACTED]
+Title              : Networkwalks Academy
+
+DETECTED HEADERS:
+─────────────────────────────────────────────────────────────────
+- Permissions-Policy
+- Upgrade
+- Referrer-Policy
+- X-Endurance-Cache-Level
+- X-Nginx-Cache
+
+KEY OBSERVATIONS:
+─────────────────────────────────────────────────────────────────
+- WordPress 7.0.4 detected (outdated version)
+- WP Download Manager 3.3.58 detected
+- Apache web server
+- US-based hosting
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 3: NSLOOKUP                                           │
+│ Command: nslookup networkwalks.com                        │
+└─────────────────────────────────────────────────────────────┘
+
+Domain Name: networkwalks.com
+Server: [REDACTED]
+Address: [REDACTED]#53
+
+Non-authoritative answer:
+Name: networkwalks.com
+Address: [REDACTED - Server IP]
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 4: CURL -I                                            │
+│ Command: curl -I networkwalks.com                         │
+└─────────────────────────────────────────────────────────────┘
+
+HTTP RESPONSE HEADERS:
+─────────────────────────────────────────────────────────────────
+HTTP/1.1 301 Moved Permanently
+Date: [REDACTED]
+Server: Apache
+Permissions-Policy: [REDACTED]
+Expires: [REDACTED]
+Cache-Control: max-age=3600
+X-Redirect-By: WordPress - Really Simple Security
+Set-Cookie: [REDACTED]
+Upgrade: h2,h2c
+Connection: Upgrade
+Location: https://networkwalks.com/
+Referrer-Policy: no-referrer-when-downgrade
+X-Endurance-Cache-Level: 0
+X-Nginx-Cache: WordPress
+Content-Type: text/html; charset=UTF-8
+
+KEY OBSERVATIONS:
+─────────────────────────────────────────────────────────────────
+- 301 Redirect to HTTPS
+- Apache web server
+- WordPress REST API exposed
+- PHP detected
+- Cache-Control: 3600 seconds
+- WordPress Download Manager cookie detected
+- WordPress - Really Simple Security plugin detected
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 5: WAFW0F                                             │
+│ Command: wafw0f networkwalks.com                          │
+└─────────────────────────────────────────────────────────────┘
+
+RESULTS:
+─────────────────────────────────────────────────────────────────
+WAF Detected     : YES
+WAF Type         : ModSecurity (SpiderLabs)
+Number of Requests: 2
+
+DETAILS:
+─────────────────────────────────────────────────────────────────
+- The site is behind ModSecurity WAF
+- Vendor: SpiderLabs (Trustwave)
+- Detection confidence: High
+
+ATTACKER ANALYSIS:
+─────────────────────────────────────────────────────────────────
+- ModSecurity WAF is present
+- Attacker knows WAF type and vendor
+- Simple attacks will be blocked
+- More sophisticated bypass techniques may be needed
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ TOOL 6: DNSRECON                                           │
+│ Command: dnsrecon -d networkwalks.com                     │
+└─────────────────────────────────────────────────────────────┘
+
+DNS RECORDS ENUMERATED:
+─────────────────────────────────────────────────────────────────
+Record Type  │ Value
+─────────────│──────────────────────────────────────────────────
+NS           │ [REDACTED].HOSTGATOR.COM
+NS           │ [REDACTED].HOSTGATOR.COM
+MX           │ [REDACTED - Mail Servers]
+SPF          │ [REDACTED - SPF Record]
+TXT          │ [REDACTED - TXT Records]
+SRV          │ [REDACTED - Service Records]
+
+KEY OBSERVATIONS:
+─────────────────────────────────────────────────────────────────
+- HostGator name servers identified
+- Mail servers identified
+- SPF policy configured
+- cPanel service records found
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ SUMMARY TABLE                                              │
+└─────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────┐
+│ Tool        │ Key Finding                                  │
+│─────────────│──────────────────────────────────────────────│
+│ whois       │ Registrar: GoDaddy, HostGator Name Servers  │
+│ whatweb     │ WordPress 7.0.4, WP Download Manager 3.3.58 │
+│ nslookup    │ Server IP resolved                          │
+│ curl        │ Apache, WordPress REST API exposed          │
+│ wafw0f      │ ModSecurity (SpiderLabs) WAF detected       │
+│ dnsrecon    │ Full DNS records enumerated                 │
+└─────────────────────────────────────────────────────────────┘
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ KEY OBSERVATIONS                                           │
+└─────────────────────────────────────────────────────────────┘
+
+1. WordPress 7.0.4 is OUTDATED - known vulnerabilities exist
+2. WP Download Manager 3.3.58 - plugin vulnerabilities
+3. ModSecurity WAF detected - attacker knows what to bypass
+4. HostGator hosting identified
+5. Full DNS footprint mapped
+6. cPanel services detected
+
+
+┌─────────────────────────────────────────────────────────────┐
+│ ATTACKER PERSPECTIVE                                       │
+└─────────────────────────────────────────────────────────────┘
+
+1. WordPress 7.0.4 → Check exploit databases for CVEs
+2. WP Download Manager → Known file disclosure vulnerabilities
+3. ModSecurity WAF → Research bypass techniques
+4. HostGator → Research hosting-specific vulnerabilities
+5. cPanel → Potential control panel attack vector
+6. DNS records → Infrastructure mapping complete
+
+═══════════════════════════════════════════════════════════════
