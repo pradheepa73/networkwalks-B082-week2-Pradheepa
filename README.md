@@ -216,5 +216,3 @@ The full penetration testing report is available here:
 
 **© 2026 Pradheepa.M | Networkwalks Cybersecurity Internship | Batch B082**
 ```
-
-
